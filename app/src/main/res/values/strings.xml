@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WebViewer</string>
+    <string name="web_site">http://www.leoprok.me/</string>
 </resources>
