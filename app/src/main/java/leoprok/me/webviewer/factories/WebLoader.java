@@ -7,7 +7,7 @@ import leoprok.me.webviewer.R;
 import leoprok.me.webviewer.interfaces.FactoryInterface;
 
 /**
- * Created by Leo on 11/5/2017.
+ * Load website to web view
  */
 public class WebLoader implements FactoryInterface {
 
@@ -21,8 +21,9 @@ public class WebLoader implements FactoryInterface {
 
     @Override
     public Object doTask() {
-        mWebView.findViewById(R.id.webView);
+        //enabled javascript
         mWebView.getSettings().setJavaScriptEnabled(true);
+        //loads the url from string xml
         mWebView.loadUrl(mContext.getString(R.string.web_site));
         return null;
     }
