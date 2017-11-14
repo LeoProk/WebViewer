@@ -2,6 +2,7 @@ package leoprok.me.webviewer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.webkit.WebView;
 
 import leoprok.me.webviewer.factories.FactoryBuilder;
@@ -17,5 +18,15 @@ public class MainActivity extends AppCompatActivity {
         FactoryBuilder.getWebView(webView,this);
         //sets the title of actionbar
         setTitle(R.string.call);
+    }
+    //handles on menu item click lisnter
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            default:
+            return super.onOptionsItemSelected(item)
+                    ;
+        }
     }
 }
