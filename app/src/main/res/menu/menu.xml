@@ -3,7 +3,7 @@
 
     <!-- icon to call -->
     <item
-        android:id="@+id/action_favorite"
+        android:id="@+id/call"
         android:icon="@drawable/ic_call_black_24dp"
         app:showAsAction="always"
         android:title="@string/call" />
